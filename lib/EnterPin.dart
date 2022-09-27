@@ -2,18 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:thirdproj/UnionBank.dart';
-
 import 'HomePageExample.dart';
-
 class EnterPin extends StatefulWidget {
   @override
   State<EnterPin> createState() => _EnterPinState();
 }
-
 class _EnterPinState extends State<EnterPin> {
-
   TextEditingController _epin =TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

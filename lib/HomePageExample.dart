@@ -25,16 +25,16 @@ class _HomePageExampleState extends State<HomePageExample> {
       body: Column(
         children: [
           Image.asset("img/p2.png"),
-          // ElevatedButton(
-          //     onPressed: ()async{
-          //       SharedPreferences prefs = await SharedPreferences.getInstance();
-          //       prefs.clear();
-          //       Navigator.of(context).pop();
-          //       Navigator.of(context).push(
-          //           MaterialPageRoute(builder: (context)=>UnionBank())
-          //       );
-          //     },
-          //     child: Text("Logout"))
+          ElevatedButton(
+              onPressed: ()async{
+                SharedPreferences prefs = await SharedPreferences.getInstance();
+                prefs.clear();
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context)=>UnionBank())
+                );
+              },
+              child: Text("Logout"))
         ],
       ),
       

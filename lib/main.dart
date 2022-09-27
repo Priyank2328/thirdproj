@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:thirdproj/DialerScreen.dart';
 import 'package:thirdproj/SplashScreen.dart';
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
-      home: ResultForm(),
+      home: EnterPin(),
     );
   }
 }
